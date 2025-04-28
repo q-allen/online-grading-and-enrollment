@@ -110,10 +110,6 @@ const LoginPage: React.FC = () => {
                 </RadioGroup>
               </div>
               
-              <div className="text-xs text-muted-foreground">
-                <p>Demo Student: ewilson@college.edu</p>
-                <p>Demo Teacher: sjohnson@college.edu</p>
-              </div>
               
               <Button 
                 type="submit" 
