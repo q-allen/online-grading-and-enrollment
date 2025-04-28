@@ -128,7 +128,6 @@ const LoginPage: React.FC = () => {
           <CardFooter className="flex flex-col space-y-2">
             <div className="text-sm text-center text-muted-foreground">
               <p>© 2023 Campus Hub. All rights reserved.</p>
-              <p className="mt-1 text-xs">This is a demo application.</p>
             </div>
           </CardFooter>
         </Card>
