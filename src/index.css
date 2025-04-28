@@ -1,0 +1,93 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 100% 97%;
+    --foreground: 222 84% 5%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 84% 5%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 84% 5%;
+
+    --primary: 216 75% 18%;
+    --primary-foreground: 210 100% 98%;
+
+    --secondary: 218 83% 37%;
+    --secondary-foreground: 210 100% 98%;
+
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
+
+    --accent: 194 100% 83%;
+    --accent-foreground: 222 84% 5%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 100% 98%;
+
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 222 84% 5%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 222 66% 18%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 213 71% 37%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 5% 16%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 240 4% 16%;
+    --sidebar-ring: 217 91% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-gradient-main min-h-screen text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    @apply bg-persian-blue/40 rounded-full;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-persian-blue/60;
+  }
+}
+
+@layer components {
+  .card-shadow {
+    @apply shadow-md shadow-college-blue/10;
+  }
+  
+  .highlight-btn {
+    @apply bg-yellow-banana text-college-blue hover:bg-yellow-banana/80 transition-colors duration-300;
+  }
+  
+  .primary-btn {
+    @apply bg-persian-blue text-white hover:bg-persian-blue/90 transition-colors duration-300;
+  }
+}
+
+#root {
+  @apply w-full min-h-screen;
+}
