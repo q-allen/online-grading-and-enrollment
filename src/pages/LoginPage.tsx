@@ -110,6 +110,10 @@ const LoginPage: React.FC = () => {
                 </RadioGroup>
               </div>
               
+              {/* <div className="text-xs text-muted-foreground">
+                <p>Demo Student: ewilson@college.edu</p>
+                <p>Demo Teacher: sjohnson@college.edu</p>
+              </div> */}
               
               <Button 
                 type="submit" 
@@ -128,6 +132,7 @@ const LoginPage: React.FC = () => {
           <CardFooter className="flex flex-col space-y-2">
             <div className="text-sm text-center text-muted-foreground">
               <p>© 2023 Campus Hub. All rights reserved.</p>
+              {/* <p className="mt-1 text-xs">This is a demo application.</p> */}
             </div>
           </CardFooter>
         </Card>
